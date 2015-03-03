@@ -85,6 +85,9 @@ public class TargetCBORRepository implements TargetRepository {
 		// This contact info should be read from config file
 		this.location = loc;
 		// RAJAT: multiplePagesBlockSize RETRIEVAL FROM CONFIG FILE
+		
+		LOGGER.info("rajat: name is " + userName);
+		  LOGGER.info("rajat: email is " + userEmail);
 
 		if (multipleFlag) {
 
