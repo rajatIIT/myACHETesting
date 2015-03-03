@@ -258,10 +258,8 @@ public class TargetStorage  extends StorageDefault{
 			String data_format = config.getParam("DATA_FORMAT");
 			TargetRepository targetRepository; 
 			if (data_format.equals("CBOR")) {
-				TargetCBORRepository tempCBORRepository = new TargetCBORRepository(targetDirectory);
-				tempCBORRepository.settargetConfigPath(targetConfFile);
-            	targetRepository = tempCBORRepository;
-            }
+				targetRepository  = new TargetCBORRepository(targetDirectory);
+			}
 			else {
 			//Default data format is file
             	targetRepository = new TargetFileRepository(targetDirectory);

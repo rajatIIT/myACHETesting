@@ -49,12 +49,6 @@ public class TargetCBORRepository implements TargetRepository {
 		targetModel = new TargetModel("Kien Pham", "kien.pham@nyu.edu");
 		// This contact info should be read from config file
 		
-	  String userName = getConfigParameter("USER_NAME");
-	  String userEmail = getConfigParameter("USER_EMAIL");
-	  
-	  LOGGER.info("rajat: name is " + userName);
-	  LOGGER.info("rajat: email is " + userEmail);
-		
 		// RAJAT: multiplePagesBlockSize RETRIEVAL FROM CONFIG FILE
 		if (multipleFlag) {
 			// initialize the first file
@@ -86,12 +80,6 @@ public class TargetCBORRepository implements TargetRepository {
 		// This contact info should be read from config file
 		this.location = loc;
 		// RAJAT: multiplePagesBlockSize RETRIEVAL FROM CONFIG FILE
-		
-		String userName = getConfigParameter("USER_NAME");
-		  String userEmail = getConfigParameter("USER_EMAIL");
-		
-		LOGGER.info("rajat: name is " + userName);
-		  LOGGER.info("rajat: email is " + userEmail);
 
 		if (multipleFlag) {
 
