@@ -74,6 +74,7 @@ public class TargetCBORRepository implements TargetRepository {
 	}
 
 	private String getConfigParameter(String name) {
+		LOGGER.info("trying to find file at " + targetConifgPath);
 		ParameterFile targetConfig = new ParameterFile(targetConifgPath);
 		return targetConfig.getParam(name);
 		
