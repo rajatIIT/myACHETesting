@@ -207,6 +207,7 @@ public class TargetCBORRepository implements TargetRepository {
 	}
 	
 	public void settargetConfigPath(String targetConfigPath){
+		LOGGER.info("Setting config file path: "+ targetConfigPath);
 		this.targetConifgPath=targetConfigPath;
 	}
 
