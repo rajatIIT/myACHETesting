@@ -86,6 +86,9 @@ public class TargetCBORRepository implements TargetRepository {
 		this.location = loc;
 		// RAJAT: multiplePagesBlockSize RETRIEVAL FROM CONFIG FILE
 		
+		String userName = getConfigParameter("USER_NAME");
+		  String userEmail = getConfigParameter("USER_EMAIL");
+		
 		LOGGER.info("rajat: name is " + userName);
 		  LOGGER.info("rajat: email is " + userEmail);
 
